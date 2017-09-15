@@ -1,1 +1,0 @@
-node ./screenshot.js

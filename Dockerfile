@@ -17,4 +17,3 @@ RUN yarn install
 
 RUN chmod +x ./screenshot.js
 ENTRYPOINT ["node", "./screenshot.js"]
-# CMD ['node', './screenshot.js']
