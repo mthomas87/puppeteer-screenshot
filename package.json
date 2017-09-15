@@ -1,0 +1,27 @@
+{
+  "name": "puppeteer-screenshot",
+  "version": "1.0.0",
+  "description": "Testing puppeteer screenshots in docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./screenshot.js",
+    "docker:run": "docker run -it -p 3000:3000 --cpus 2 -m 4G --shm-size 1G -v `pwd`:/app/ puppeteer-screenshot bash",
+    "docker:build": "docker build -t puppeteer-screenshot ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/positlabs/puppeteer-screenshot.git"
+  },
+  "author": "Josh Beckwith <josh@positlabs.com> (https://github.com/positlabs)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/positlabs/puppeteer-screenshot/issues"
+  },
+  "homepage": "https://github.com/positlabs/puppeteer-screenshot#readme",
+  "engines": {
+    "node": "8.4.0"
+  },
+  "dependencies": {
+    "puppeteer": "^0.10.2"
+  }
+}
