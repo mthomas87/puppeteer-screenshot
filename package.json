@@ -4,8 +4,7 @@
   "description": "Testing puppeteer screenshots in docker",
   "main": "index.js",
   "scripts": {
-    "start": "node ./screenshot.js",
-    "docker:run": "docker run -it -p 3000:3000 --cpus 2 -m 4G --shm-size 1G -v `pwd`:/app/ puppeteer-screenshot bash",
+    "start": "docker run -it -p 3000:3000 --cpus 2 -m 4G --shm-size 1G -v `pwd`:/app/ puppeteer-screenshot bash",
     "docker:build": "docker build -t puppeteer-screenshot ./"
   },
   "repository": {
